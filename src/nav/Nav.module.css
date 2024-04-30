@@ -1,0 +1,117 @@
+.headernav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 310;
+    transition: all 500ms ease-in-out;
+    background: #fff;
+    animation: enhance-header linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 150px;
+}
+@keyframes enhance-header {
+    to {
+        background: #131313;
+        backdrop-filter: blur(5px);
+    }
+}
+.navbar {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 20px;
+}
+.listaIconos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 70px;
+    padding-left: 124px;
+}
+
+.lista {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 20px;
+}
+.logoImagen {
+    height: 40px;
+    width: 150px;
+}
+/*IS ACTIVE*/
+.options {
+    line-height: 4;
+    color: black;
+    position: relative;
+    height: 36px;
+    font-size: 13px;
+    color: #131313;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin:0 1.5em;
+    padding: 5px 0;
+        animation: enhance-li linear both;
+        animation-timeline: scroll(root block);
+        animation-range: 0 200px;
+    }
+.options:before {
+    content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #131313;
+  transform: scale(0);
+  transform-origin: left;
+  transition: all .3s;
+
+}
+
+.options:hover::before,
+.options:hover::after,
+.options.isactive::before,
+.options.isactive::after {
+    transform: scale(1);
+    animation: enhance-hover linear both;
+    animation-timeline: scroll(root block);
+    animation-range: 0 200px;
+}
+
+@keyframes enhance-hover {
+    to {
+        background-color: rgb(249, 245, 243);
+    }
+}
+.isactive {
+    color: #131313;
+    font-weight: bold;
+}
+
+
+.options:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #131313;
+    transform: scale(0);
+    transform-origin: right;
+    transition: all .3s;
+    
+  }
+  @keyframes enhance-li {
+    to {
+        color: rgb(249, 245, 243);
+    }
+}
