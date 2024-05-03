@@ -1,4 +1,3 @@
-//Styles
 'use client' 
 
 import Style from "./Nav.module.css";
@@ -16,7 +15,7 @@ export default function Nav() {
         },
         {
             id: 2,
-            nombre: "PANEL CONTROL",
+            nombre: "PANEL",
             url:"/controlpanel"
         },
         {
