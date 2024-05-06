@@ -1,6 +1,6 @@
 //Componentes 
 import NavEquipos from "@/nav/NavEquipos";
-
+import Titulo from "@/lib/Titulo";
 //Dependencas 
 import Link from "next/link";
 
@@ -11,6 +11,7 @@ export default function Maquina({params}) {
             <NavEquipos url = {"controlpanel"} />
             <main>
                 <h2>Maquina: {id}</h2>
+                <Titulo title= {""} properties={"RECETA"} description= {""} report= {true} />
                 <section>
                     <article>
                         <div>

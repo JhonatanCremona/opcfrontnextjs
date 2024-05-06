@@ -15,9 +15,9 @@ export default function NavEquipos({url, }) {
     let idUrl = usePathname().match(/\/controlpanel\/(.+)/);
 
     return (
-        <nav className={` flex justify-center items-center`}>
+        <nav className={`flex justify-content-center`} style={{justifyContent:"center"}}>
             <article className={`  Style.ComponentImagen `}>
-                <Link href= {`/${url}/${maquina.C1}`} className={`flex justify-center items-center Style.boxImagen`}
+                <Link href= {`/${url}/${maquina.C1}`} className={`flex  Style.boxImagen`}
                 >
                     <h3>Cocina</h3>
                 </Link>
@@ -27,7 +27,7 @@ export default function NavEquipos({url, }) {
             <article>
                 <Link 
                     href= {`/${url}/${maquina.E1}`} 
-                    className={`flex justify-center items-center Style.boxImagen`}>
+                    className={`flex  Style.boxImagen`}>
                     <h3>Enfriador</h3>
                 </Link> 
                 <div className={ idUrl[1] == "Enfriador1" ? Style.Box: Style.BoxInactive }></div>    
