@@ -7,6 +7,7 @@ import Link from "next/link";
 import { usePathname } from 'next/navigation'
 
 export default function Nav() {
+    // url id 2 tiene que obtener un valor desde el contexto.
     const opciones = [
         {
             id: 1,
@@ -16,7 +17,7 @@ export default function Nav() {
         {
             id: 2,
             nombre: "PANEL",
-            url:"/controlpanel"
+            url:"/controlpanel/Cocina1"
         },
         {
             id: 3,
